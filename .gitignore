@@ -20,3 +20,13 @@ notes-*.md
 /private-assets/
 /tg_context_snapshot.json
 /test.txt
+
+# Flatpak generated files
+/.flatpak-builder/
+/build-dir/
+/.flatpak-repo/
+
+# Temporary packaging and backups
+/flathub-submission/
+/CMakeLists.txt.before-flathub-metadata-*
+/*.before-*

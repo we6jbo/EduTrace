@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-project(EduTrace VERSION 0.4 LANGUAGES CXX)
+project(EduTrace VERSION 0.7.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 REQUIRED COMPONENTS Core Sql)
@@ -10,3 +10,11 @@ qt_add_executable(EduTrace main.cpp mainwindow.cpp mainwindow.h mainwindow.ui)
 set_source_files_properties(mainwindow.ui PROPERTIES HEADER_FILE_ONLY TRUE)
 target_link_libraries(EduTrace PRIVATE Qt6::Core Qt6::Sql PkgConfig::SODIUM OpenSSL::Crypto)
 install(TARGETS EduTrace RUNTIME DESTINATION bin)
+
+# Flathub desktop integration
+install(FILES org.oneal.EduTrace.desktop
+        DESTINATION share/applications)
+install(FILES org.oneal.EduTrace.metainfo.xml
+        DESTINATION share/metainfo)
+install(FILES org.oneal.EduTrace.svg
+        DESTINATION share/icons/hicolor/scalable/apps)

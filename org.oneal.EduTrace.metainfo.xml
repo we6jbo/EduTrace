@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.oneal.EduTrace</id>
+  <name>EduTrace</name>
+  <summary>Local encrypted historical research</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <description>
+    <p>EduTrace is a local-only command-line application for storing and searching encrypted historical research notes and source references.</p>
+    <p>Research data remains on the user's computer. The application does not provide an AI model or automatic online publication.</p>
+  </description>
+  <launchable type="desktop-id">org.oneal.EduTrace.desktop</launchable>
+  <categories>
+    <category>Education</category>
+    <category>Utility</category>
+  </categories>
+</component>

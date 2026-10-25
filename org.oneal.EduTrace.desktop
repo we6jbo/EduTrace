@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=EduTrace
+Comment=Local encrypted historical research notes
+Exec=EduTrace research
+Icon=org.oneal.EduTrace
+Terminal=true
+Categories=Education;Utility;

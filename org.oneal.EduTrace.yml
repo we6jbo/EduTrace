@@ -9,6 +9,12 @@ finish-args:
   - --share=ipc
   - --device=dri
 modules:
+  - name: libsodium
+    buildsystem: autotools
+    sources:
+      - type: archive
+        url: https://download.libsodium.org/libsodium/releases/libsodium-1.0.20.tar.gz
+        sha256: REPLACE_WITH_VERIFIED_UPSTREAM_SHA256
   - name: EduTrace
     buildsystem: cmake-ninja
     sources:

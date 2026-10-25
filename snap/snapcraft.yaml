@@ -1,0 +1,19 @@
+name: edutrace
+base: core24
+version: '0.7.0'
+summary: Local encrypted research notes CLI
+description: |
+  A local-only Qt-based research notes CLI with encrypted local storage.
+grade: devel
+confinement: strict
+apps:
+  edutrace:
+    command: usr/bin/EduTrace
+    plugs: [home]
+parts:
+  edutrace:
+    plugin: cmake
+    source: .
+    cmake-parameters: [-DCMAKE_INSTALL_PREFIX=/usr]
+    build-packages: [g++, cmake, pkg-config, libssl-dev, libsodium-dev, qt6-base-dev]
+    stage-packages: [libssl3t64, libsodium23, libqt6core6t64, libqt6sql6t64, libqt6sql6-sqlite]

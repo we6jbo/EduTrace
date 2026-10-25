@@ -1,0 +1,16 @@
+build/
+build-*/
+*.user
+*.db
+*.db-*
+*.enc
+*.key
+*.log
+*.bak
+.env
+.edutrace-private/
+private/
+private-assets/
+tg_context_snapshot.json
+screenshot.png
+*.md.enc
